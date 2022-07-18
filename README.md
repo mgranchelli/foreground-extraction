@@ -24,7 +24,7 @@ $ cd ./foreground-extraction
 $ python3 foreground-extraction.py -i path-image
 ```
 Nella finestra che mostrerà l'immagine è possibile disegnare un rettangolo con il mouse che conterrà la regione da segmentare e si aprirà una nuova finestra contenente la nuova immagine segmentata.
-Se `-i path-image` non specificato verrà aperta l'immagine di default [*avengers.jpeg*](https://github.com/mgranchelli/foreground-extraction/assets/images/avengers.jpeg).
+Se `-i path-image` non specificato verrà aperta l'immagine di default [*avengers.jpeg*](https://github.com/mgranchelli/foreground-extraction/blob/master/assets/images/avengers.jpeg).
 Per chiudere il processo digitare `q`.
 
 ## Example
@@ -32,15 +32,14 @@ Test effettuati:
 ```bash
 $ python3 foreground-extraction.py
 ```
-![Test 1](test/test-avengers-1.png | width=100)
+<img src="test/test-avengers-1.png" alt="Test 1" width="400">
 
 ```bash
 $ python3 foreground-extraction.py
 ```
-![Test 2](test/test-avengers-2.png | width=100)
+<img src="test/test-avengers-2.png" alt="Test 2" width="400">
 
 ```bash
 $ python3 foreground-extraction.py -i assets/images/jon-snow.jpeg
 ```
-
-![Test 3](test/test-jon-snow.png | width=100)
+<img src="test/test-jon-snow.png" alt="Test 3" width="400">
