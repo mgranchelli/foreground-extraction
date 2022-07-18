@@ -4,7 +4,7 @@ import argparse
 import imghdr
 
 ap = argparse.ArgumentParser()
-ap.add_argument("-i", "--image", default="assets/avengers.jpeg", help="name of image in the same path (es: avengers.jpeg)")
+ap.add_argument("-i", "--image", default="assets/images/avengers.jpeg", help="image path")
 args = vars(ap.parse_args())
 
 class BoundingBoxWidget(object):
