@@ -1,0 +1,5 @@
+relazione/src/*
+
+!relazione/src/images
+!relazione/src/*.pdf
+!relazione/src/*.tex
