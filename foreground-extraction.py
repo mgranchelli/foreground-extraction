@@ -103,5 +103,7 @@ if __name__ == '__main__':
             if key == ord('q'):
                 cv2.destroyAllWindows()
                 exit(1)
-    except:
-        print('No such file or is a directory: ', args['image'])
+    except FileNotFoundError:
+        print('No such file: ', args['image'])
+    except IsADirectoryError:
+        print('Is a directory: ', args['image'])
