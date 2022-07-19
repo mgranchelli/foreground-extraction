@@ -1,5 +1,5 @@
 # Foreground Extraction with OpenCV and GrabCut Algorithm
-Il seguente repo contiene il progetto realizzato per la tesina svolta per il corso di Intelligenza Artificiale A.A. 2021/2022.
+Il seguente repo contiene il progetto realizzato per il corso di Intelligenza Artificiale 2021/2022.
 
 L’estrazione interattiva in primo piano su un'immagine avviene disegnando un rettangolo contenente la regione in primo piano da estrarre. Tale rettangolo viene dato in input all'algoritmo GrabCut presente all'interno della libreria OpenCV e viene restituita una nuova immagine contenente la regione in primo piano all’interno del rettangolo disegnato.
 
@@ -15,29 +15,31 @@ python 3.9.2
 ## Getting Started 
 ```bash
 $ git clone https://github.com/mgranchelli/foreground-extraction.git
-$ pip install -r requirements.txt
 $ cd ./foreground-extraction
+$ pip install -r requirements.txt
 ```
 
 ## Basic Usage
 ```bash
 $ python3 foreground-extraction.py -i path-image
 ```
-Nella finestra che mostrerà l'immagine è possibile disegnare un rettangolo con il mouse che conterrà la regione da segmentare e si aprirà una nuova finestra contenente la nuova immagine segmentata.
+Nella finestra che mostrerà l'immagine è possibile disegnare un rettangolo con il mouse che conterrà la regione da estrarre. Una volta disegnato il rettangolo si aprirà una nuova finestra contenente la nuova immagine con la regione in primo piano presente all'interno del rettangolo.
 Se `-i path-image` non specificato verrà aperta l'immagine di default [*avengers.jpeg*](https://github.com/mgranchelli/foreground-extraction/blob/master/assets/images/avengers.jpeg).
-Per chiudere il processo digitare `q`.
+
+Per chiudere il processo è possibile digitare `q`.
 
 ## Example
 Test effettuati:
-```bash
-$ python3 foreground-extraction.py
-```
-<img src="test/test-avengers-1.png" alt="Test 1" width="400">
 
 ```bash
 $ python3 foreground-extraction.py
 ```
-<img src="test/test-avengers-2.png" alt="Test 2" width="400">
+<img src="test/test-avengers-1.png" alt="Test 1" width="500">
+
+```bash
+$ python3 foreground-extraction.py
+```
+<img src="test/test-avengers-2.png" alt="Test 2" width="500">
 
 ```bash
 $ python3 foreground-extraction.py -i assets/images/jon-snow.jpeg
